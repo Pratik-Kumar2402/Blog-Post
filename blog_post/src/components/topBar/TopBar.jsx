@@ -13,16 +13,16 @@ export default function TopBar() {
     return (
         <div className='top'>
             <div className="topLeft">
-                <i className="topIcon fa-brands fa-facebook"></i>
-                <i className="topIcon fa-brands fa-twitter"></i>
-                <i className="topIcon fa-brands fa-pinterest"></i>
-                <i className="topIcon fa-brands fa-instagram"></i>
+                <a href="https://www.facebook.com/"><i className="topIcon fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com/"><i className="topIcon fa-brands fa-twitter"></i></a>
+                <a href="https://www.pinterest.com/"><i className="topIcon fa-brands fa-pinterest"></i></a>
+                <a href="https://www.instagram.com/"><i className="topIcon fa-brands fa-instagram"></i></a>
             </div>
             <div className="topCenter">
                 <ul className="topList">
                     <li className="topListItem"><Link className="link" to="/">HOME</Link></li>
-                    <li className="topListItem"><Link className="link" to="/">ABOUT</Link></li>
-                    <li className="topListItem"><Link className="link" to="/">CONTACT</Link></li>
+                    <li className="topListItem"><Link className="link" to="/about">ABOUT</Link></li>
+                    <li className="topListItem"><Link className="link" to="/contact">CONTACT</Link></li>
                     <li className="topListItem"><Link className="link" to="/write">WRTIE</Link></li>
                     <li className="topListItem" onClick={handleLogout}>{user && 'LOGOUT'}</li>
                 </ul>

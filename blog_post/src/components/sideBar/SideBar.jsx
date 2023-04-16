@@ -19,7 +19,7 @@ export default function SideBar() {
                 <span className='sideBarTitle'>
                     ABOUT ME
                 </span>
-                <img className='sideBarImg' src={require('../image/cartoon-characters-1.webp')} alt='' />
+                <img className='sideBarImg' src={require('../image/profile.webp')} alt='' />
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, enim? Sed laboriosam provident alias iste perferendis nisi, debitis nihil?</p>
             </div>
             <div className='sideBarItem'>
@@ -39,10 +39,10 @@ export default function SideBar() {
                     FOLLOW US
                 </span>
                 <div className='sideBarSocial'>
-                    <i className="sideBarIcon fa-brands fa-facebook"></i>
-                    <i className="sideBarIcon fa-brands fa-twitter"></i>
-                    <i className="sideBarIcon fa-brands fa-pinterest"></i>
-                    <i className="sideBarIcon fa-brands fa-instagram"></i>
+                    <a href="https://www.facebook.com/"><i className="sideBarIcon fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/"><i className="sideBarIcon fa-brands fa-twitter"></i></a>
+                    <a href="https://www.pinterest.com/"><i className="sideBarIcon fa-brands fa-pinterest"></i></a>
+                    <a href="https://www.instagram.com/"><i className="sideBarIcon fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </div>
