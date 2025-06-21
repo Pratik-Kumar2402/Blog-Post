@@ -12,7 +12,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("https://blog-post-44he.onrender.com/api/posts" + search);
+      const res = await axios.get("http://127.0.0.1:5050/api/posts" + search);
       setPosts(res.data);
     };
     fetchPosts();

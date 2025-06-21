@@ -11,7 +11,7 @@ export default function Contact() {
             </div>
             <div className="row">
                 <div className="column">
-                    <img className='contactImg' src={require('../../components/image/landscape1.jpg')} alt='' />
+                    <img className='contactImg' src={require('../../components/image/landscape2.jpg')} alt='' />
                 </div>
                 <div className="column">
                     <form action='action_page.php'>

@@ -5,7 +5,7 @@ import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Login from './pages/login/Login'
 import Register from './pages/register/Register'
-import { BrowserRouter as Router, Routes, Route, /*Link*/ } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
 import About from "./pages/about/About";
@@ -14,7 +14,7 @@ import Contact from "./pages/contact/Contact";
 function App() {
   const { user } = useContext(Context);
   return (
-    <Router>
+    <BrowserRouter>
       <TopBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -26,7 +26,7 @@ function App() {
         <Route path="/settings" element={user ? <Settings /> : <Register />} />
         <Route path="/post/:postId" element={<Single />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
